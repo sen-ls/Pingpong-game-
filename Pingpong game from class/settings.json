@@ -1,0 +1,32 @@
+{
+    "common": {
+        "message_encoding": "ascii",
+        "message_decoding": "utf-8"
+    },
+    "client": {
+        "broadcast_address": "255.255.255.255",
+        "udp_port": 54000,
+        "buffer_size": 1024
+    },
+    "server": {
+        "bind_address": "0.0.0.0",
+        "buffer_size": 1024,
+        "udp_port": 54000,
+        "tcp_port": 54001,
+        "features": [
+            {
+                "name": "BASIC",
+                "parameters": []
+            },
+            {
+                "name": "DIMS",
+                "parameters": [
+                    10,
+                    10,
+                    50,
+                    50
+                ]
+            }
+        ]
+    }
+}
